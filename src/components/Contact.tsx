@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -11,8 +10,8 @@ export const Contact = () => {
             Contact Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get in touch with Bonafit Bamaraja Marine for all your marine food requirements. 
-            We're here to serve you with excellence.
+            For more information and further details, you can contact us through
+            the following portals
           </p>
         </div>
 
@@ -25,12 +24,8 @@ export const Contact = () => {
               <CardTitle>Phone</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-2">
-                +62 21 1234 5678
-              </p>
-              <p className="text-muted-foreground">
-                +62 812 3456 7890
-              </p>
+              <p className="text-muted-foreground mb-2">+62 813-5388-1727</p>
+              {/* <p className="text-muted-foreground">+62 812 3456 7890</p> */}
             </CardContent>
           </Card>
 
@@ -43,11 +38,9 @@ export const Contact = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-2">
-                info@bonafitbamaraja.com
+                bonafitbamarajamarine22@gmail.com
               </p>
-              <p className="text-muted-foreground">
-                sales@bonafitbamaraja.com
-              </p>
+              {/* <p className="text-muted-foreground">sales@bonafitbamaraja.com</p> */}
             </CardContent>
           </Card>
 
@@ -60,10 +53,14 @@ export const Contact = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Jl. Pelabuhan Raya No. 123<br />
-                Muara Baru, Jakarta Utara<br />
-                DKI Jakarta 14440<br />
-                Indonesia
+                <strong>
+                  KBN (Kampung Bahari Nusantara) PT. Bonafit Bamaraja Marine
+                </strong>
+                ,
+                <br />
+                Jalan Pantai Pebuahan, Desa Banyubiru, Kabupaten Jembrana,
+                <br />
+                Bali, Indonesia
               </p>
             </CardContent>
           </Card>

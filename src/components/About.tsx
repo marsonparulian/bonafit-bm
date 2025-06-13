@@ -1,5 +1,10 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Fish, Award, Shield, Truck } from "lucide-react";
 
 export const About = () => {
@@ -7,23 +12,27 @@ export const About = () => {
     {
       icon: Fish,
       title: "Sustainable Fishing",
-      description: "We practice responsible fishing methods to preserve marine ecosystems for future generations."
+      description:
+        "We practice responsible fishing methods to preserve marine ecosystems for future generations.",
     },
     {
       icon: Award,
       title: "Premium Quality",
-      description: "Our seafood meets the highest international quality standards with rigorous testing and certification."
+      description:
+        "Our seafood meets the highest international quality standards with rigorous testing and certification.",
     },
     {
       icon: Shield,
       title: "Food Safety",
-      description: "Advanced cold-chain management and HACCP compliance ensure maximum freshness and safety."
+      description:
+        "Advanced cold-chain management and HACCP compliance ensure maximum freshness and safety.",
     },
     {
       icon: Truck,
       title: "Fast Delivery",
-      description: "Direct from boat to your business with our efficient logistics network and temperature-controlled transport."
-    }
+      description:
+        "Direct from boat to your business with our efficient logistics network and temperature-controlled transport.",
+    },
   ];
 
   return (
@@ -34,9 +43,11 @@ export const About = () => {
             About Bonafit Bamaraja Marine
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Bonafit Bamaraja Marine is a leading raw marine food producer dedicated to 
-            delivering exceptional quality seafood. We specialize in sustainable fishing 
-            and processing of premium marine products for global markets.
+            Collaborating with the Indonesian Navy (TNI AL) in the government's
+            food self-sufficiency program, this initiative was initially known
+            as the Maritime Food Estate program. The company was established
+            under the name PT BONAFIT BAMARAJA MARINE and is part of the JUMA
+            BERLIAN EXIM Group (JBE GROUP).
           </p>
         </div>
 

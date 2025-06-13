@@ -1,28 +1,37 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export const Products = () => {
   const products = [
     {
       name: "Fresh Fish",
-      description: "Premium whole fish and fillets including salmon, tuna, cod, and seasonal catches",
-      image: "🐟"
+      description:
+        "Premium whole fish and fillets including salmon, tuna, cod, and seasonal catches",
+      image: "🐟",
     },
     {
       name: "Shellfish",
-      description: "Lobsters, crabs, shrimp, and other crustaceans sourced from pristine waters",
-      image: "🦞"
+      description:
+        "Lobsters, crabs, shrimp, and other crustaceans sourced from pristine waters",
+      image: "🦞",
     },
     {
       name: "Mollusks",
-      description: "Oysters, mussels, clams, and scallops harvested from certified aquaculture farms",
-      image: "🦪"
+      description:
+        "Oysters, mussels, clams, and scallops harvested from certified aquaculture farms",
+      image: "🦪",
     },
     {
       name: "Specialty Items",
-      description: "Sea urchin, octopus, squid, and other premium marine delicacies",
-      image: "🐙"
-    }
+      description:
+        "Sea urchin, octopus, squid, and other premium marine delicacies",
+      image: "🐙",
+    },
   ];
 
   return (
@@ -33,8 +42,8 @@ export const Products = () => {
             Our Products
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We offer a comprehensive range of raw marine foods, carefully selected and processed 
-            to meet the demanding standards of professional kitchens and food service operations.
+            Our company focuses on the cultivation and production services of
+            Vaname crustaceans and Mackarel fish.
           </p>
         </div>
 
@@ -46,9 +55,7 @@ export const Products = () => {
                 <CardTitle className="text-xl">{product.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  {product.description}
-                </CardDescription>
+                <CardDescription>{product.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
@@ -63,7 +70,8 @@ export const Products = () => {
               <div className="text-4xl mb-4">🏆</div>
               <h4 className="font-semibold mb-2">HACCP Certified</h4>
               <p className="text-sm text-muted-foreground">
-                Hazard Analysis and Critical Control Points certification for food safety
+                Hazard Analysis and Critical Control Points certification for
+                food safety
               </p>
             </div>
             <div className="p-6">

@@ -1,26 +1,29 @@
-
 export const CompanyHistory = () => {
   const milestones = [
     {
       year: "2010",
       title: "Company Founded",
-      description: "Bonafit Bamaraja Marine was established with a vision to become a leading marine food producer."
+      description:
+        "Bonafit Bamaraja Marine was established with a vision to become a leading marine food producer.",
     },
     {
       year: "2015",
       title: "Facility Expansion",
-      description: "Major expansion of processing facilities and cold storage capabilities."
+      description:
+        "Major expansion of processing facilities and cold storage capabilities.",
     },
     {
       year: "2018",
       title: "International Certification",
-      description: "Achieved HACCP and ISO 22000 certifications for food safety management."
+      description:
+        "Achieved HACCP and ISO 22000 certifications for food safety management.",
     },
     {
       year: "2024",
       title: "Sustainable Leadership",
-      description: "Recognized as a leader in sustainable marine food production practices."
-    }
+      description:
+        "Recognized as a leader in sustainable marine food production practices.",
+    },
   ];
 
   return (
@@ -31,8 +34,12 @@ export const CompanyHistory = () => {
             Our History
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From humble beginnings to industry leadership, our journey reflects 
-            our commitment to excellence and innovation in marine food production.
+            Responding to the opportunity and efforts to support the
+            government's Food Self-Sufficiency program, known as the Food
+            Estate, this company was established on July 31, 2021. The
+            establishment of the company is part of a collaboration between the
+            Indonesian Navy and the local government. Its goal is to benefit the
+            company, the surrounding community, and the local government.
           </p>
         </div>
 

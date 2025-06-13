@@ -1,5 +1,10 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Factory, Thermometer, Package, CheckCircle } from "lucide-react";
 
 export const Facility = () => {
@@ -7,23 +12,27 @@ export const Facility = () => {
     {
       icon: Factory,
       title: "Modern Processing Plant",
-      description: "State-of-the-art facilities with automated processing lines for maximum efficiency and quality control."
+      description:
+        "State-of-the-art facilities with automated processing lines for maximum efficiency and quality control.",
     },
     {
       icon: Thermometer,
       title: "Cold Storage Systems",
-      description: "Advanced refrigeration and freezing systems maintaining optimal temperatures throughout the supply chain."
+      description:
+        "Advanced refrigeration and freezing systems maintaining optimal temperatures throughout the supply chain.",
     },
     {
       icon: Package,
       title: "Packaging & Distribution",
-      description: "Hygienic packaging facilities with vacuum sealing and modified atmosphere packaging capabilities."
+      description:
+        "Hygienic packaging facilities with vacuum sealing and modified atmosphere packaging capabilities.",
     },
     {
       icon: CheckCircle,
       title: "Quality Assurance Lab",
-      description: "On-site laboratory for comprehensive quality testing and microbiological analysis."
-    }
+      description:
+        "On-site laboratory for comprehensive quality testing and microbiological analysis.",
+    },
   ];
 
   return (
@@ -34,8 +43,15 @@ export const Facility = () => {
             Our Facility
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our world-class processing facility combines cutting-edge technology with 
-            stringent quality controls to ensure the highest standards in marine food production.
+            Our world-class processing facility combines cutting-edge technology
+            with stringent quality controls to ensure the highest standards in
+            marine food production.
+          </p>
+          <p className="text-lg max-w-3xl mx-auto">
+            Security Post Office Generator & Mechanic Room Prayer Room
+            (Musholah) Feed Warehouse& Workshop Laboratory Harvest Hall Employee
+            Mess Kitchen & Dining Room Blower Pump House Marine Pump House IPAL
+            Pond 36 Cultivation Pond
           </p>
         </div>
 
@@ -51,9 +67,7 @@ export const Facility = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  {feature.description}
-                </CardDescription>
+                <CardDescription>{feature.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
@@ -67,15 +81,21 @@ export const Facility = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">5,000</div>
-              <div className="text-sm text-muted-foreground">Tons/Month Capacity</div>
+              <div className="text-sm text-muted-foreground">
+                Tons/Month Capacity
+              </div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">-20°C</div>
-              <div className="text-sm text-muted-foreground">Storage Temperature</div>
+              <div className="text-sm text-muted-foreground">
+                Storage Temperature
+              </div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Quality Monitoring</div>
+              <div className="text-sm text-muted-foreground">
+                Quality Monitoring
+              </div>
             </div>
           </div>
         </div>
