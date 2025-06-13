@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
@@ -9,27 +8,39 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-ocean-gradient">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center bg-ocean-gradient"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Bonafit Bamaraja Marine
+            <small>Company Profile</small>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Premium Raw Marine Food Producer - Delivering the finest quality seafood 
-            with sustainable practices and exceptional freshness guaranteed.
+            Premium and Sustainable Aquaculture Producer - Delivering the fresh
+            and high quality products from our finest ponds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90">
+            <Button
+              size="lg"
+              onClick={scrollToAbout}
+              className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90"
+            >
               Learn More
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary"
+            >
               View Products
             </Button>
           </div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-white/80" />
       </div>
