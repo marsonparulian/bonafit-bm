@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 15%;
+    --primary: 210 100% 20%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -25,8 +25,8 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 35 100% 55%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 200 100% 40%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -46,10 +46,10 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Custom colors for marine theme */
-    --ocean-blue: 200 100% 85%;
-    --warm-orange: 35 100% 55%;
-    --sunny-yellow: 45 100% 65%;
+    /* Professional ocean theme colors */
+    --ocean-blue: 210 100% 20%;
+    --deep-sea: 220 100% 15%;
+    --wave-blue: 200 100% 85%;
   }
 
   .dark {
@@ -71,7 +71,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 35 100% 55%;
+    --accent: 200 100% 40%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -103,10 +103,10 @@
 
 @layer utilities {
   .bg-ocean-gradient {
-    background: linear-gradient(135deg, hsl(var(--ocean-blue)) 0%, hsl(var(--primary)) 100%);
+    background: linear-gradient(135deg, hsl(var(--wave-blue)) 0%, hsl(var(--primary)) 100%);
   }
   
-  .bg-warm-gradient {
-    background: linear-gradient(135deg, hsl(var(--warm-orange)) 0%, hsl(var(--sunny-yellow)) 100%);
+  .bg-deep-ocean {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--deep-sea)) 100%);
   }
 }

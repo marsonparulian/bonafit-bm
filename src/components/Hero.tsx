@@ -20,7 +20,7 @@ export const Hero = () => {
             with sustainable practices and exceptional freshness guaranteed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3 bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90">
               Learn More
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
