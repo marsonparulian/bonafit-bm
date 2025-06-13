@@ -2,7 +2,13 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { Products } from "@/components/Products";
+import { CompanyHistory } from "@/components/CompanyHistory";
+import { Facility } from "@/components/Facility";
+import { VisionHero } from "@/components/VisionHero";
+import { VisionList } from "@/components/VisionList";
+import { ProductsShowcase } from "@/components/ProductsShowcase";
+import { Production } from "@/components/Production";
+import { Team } from "@/components/Team";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -12,7 +18,13 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <Products />
+      <CompanyHistory />
+      <Facility />
+      <VisionHero />
+      <VisionList />
+      <ProductsShowcase />
+      <Production />
+      <Team />
       <Contact />
       <Footer />
     </div>

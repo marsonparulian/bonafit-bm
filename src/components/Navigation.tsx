@@ -17,7 +17,7 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">AquaMarine</h1>
+            <h1 className="text-2xl font-bold text-primary">Bonafit Bamaraja Marine</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -36,10 +36,28 @@ export const Navigation = () => {
                 About
               </button>
               <button
+                onClick={() => scrollToSection("facility")}
+                className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Facility
+              </button>
+              <button
+                onClick={() => scrollToSection("vision")}
+                className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Vision
+              </button>
+              <button
                 onClick={() => scrollToSection("products")}
                 className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Products
+              </button>
+              <button
+                onClick={() => scrollToSection("team")}
+                className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Team
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -79,10 +97,28 @@ export const Navigation = () => {
                 About
               </button>
               <button
+                onClick={() => scrollToSection("facility")}
+                className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
+              >
+                Facility
+              </button>
+              <button
+                onClick={() => scrollToSection("vision")}
+                className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
+              >
+                Vision
+              </button>
+              <button
                 onClick={() => scrollToSection("products")}
                 className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
               >
                 Products
+              </button>
+              <button
+                onClick={() => scrollToSection("team")}
+                className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
+              >
+                Team
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

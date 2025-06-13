@@ -13,11 +13,11 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Premium Raw Marine Foods
+            Bonafit Bamaraja Marine
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Delivering the finest quality seafood directly from ocean to your table. 
-            Sustainable fishing practices, exceptional freshness guaranteed.
+            Premium Raw Marine Food Producer - Delivering the finest quality seafood 
+            with sustainable practices and exceptional freshness guaranteed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3">
