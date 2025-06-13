@@ -9,21 +9,21 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-ocean-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Bonafit Bamaraja Marine
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
             Premium Raw Marine Food Producer - Delivering the finest quality seafood 
             with sustainable practices and exceptional freshness guaranteed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3">
+            <Button size="lg" onClick={scrollToAbout} className="text-lg px-8 py-3 bg-accent hover:bg-accent/90 text-accent-foreground">
               Learn More
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-3">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
               View Products
             </Button>
           </div>
@@ -31,7 +31,7 @@ export const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-muted-foreground" />
+        <ArrowDown className="h-6 w-6 text-white/80" />
       </div>
     </section>
   );

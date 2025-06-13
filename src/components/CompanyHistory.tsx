@@ -24,7 +24,7 @@ export const CompanyHistory = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gradient-to-r from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -39,7 +39,7 @@ export const CompanyHistory = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {milestones.map((milestone, index) => (
             <div key={index} className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="bg-accent text-accent-foreground rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
                 {milestone.year}
               </div>
               <h3 className="text-xl font-semibold mb-2">{milestone.title}</h3>

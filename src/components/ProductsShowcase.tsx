@@ -15,9 +15,9 @@ export const ProductsShowcase = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="text-center">
-            <div className="bg-blue-50 rounded-2xl p-8 mb-6">
+            <div className="bg-gradient-to-br from-orange-100 to-yellow-100 rounded-2xl p-8 mb-6 border-2 border-accent/20">
               <div className="text-8xl mb-4">🦐</div>
-              <h3 className="text-2xl font-bold mb-4">Premium Shrimp</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Premium Shrimp</h3>
               <p className="text-muted-foreground">
                 Fresh, sustainably sourced shrimp available in various sizes. 
                 Known for their sweet taste and firm texture, perfect for 
@@ -27,9 +27,9 @@ export const ProductsShowcase = () => {
           </div>
           
           <div className="text-center">
-            <div className="bg-blue-50 rounded-2xl p-8 mb-6">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl p-8 mb-6 border-2 border-primary/20">
               <div className="text-8xl mb-4">🐟</div>
-              <h3 className="text-2xl font-bold mb-4">Fresh Fish</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Fresh Fish</h3>
               <p className="text-muted-foreground">
                 A wide variety of fresh fish including tuna, salmon, and local 
                 species. All fish are caught using sustainable methods and 
