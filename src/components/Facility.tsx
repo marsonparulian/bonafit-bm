@@ -5,15 +5,33 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Factory, Thermometer, Package, CheckCircle } from "lucide-react";
+import {
+  Factory,
+  Thermometer,
+  Package,
+  CheckCircle,
+  TestTube,
+  FishIcon,
+} from "lucide-react";
 
 export const Facility = () => {
   const facilityFeatures = [
     {
-      icon: Factory,
-      title: "Modern Processing Plant",
+      icon: FishIcon,
+      title: "Our Ponds",
       description:
-        "State-of-the-art facilities with automated processing lines for maximum efficiency and quality control.",
+        "IPAL Pond and 36 Cultivation Pond guarantee our sustainable production",
+    },
+    {
+      icon: Factory,
+      title: "Feed Warehouse & Workshop",
+      description:
+        "High standard of feed warehouse to ensure the quality of our production",
+    },
+    {
+      icon: TestTube,
+      title: "Laboratory Harvest Hall",
+      description: "Our finest laboratory hall directly after harvest",
     },
     {
       icon: Thermometer,
@@ -47,12 +65,19 @@ export const Facility = () => {
             with stringent quality controls to ensure the highest standards in
             marine food production.
           </p>
-          <p className="text-lg max-w-3xl mx-auto">
-            Security Post Office Generator & Mechanic Room Prayer Room
-            (Musholah) Feed Warehouse& Workshop Laboratory Harvest Hall Employee
-            Mess Kitchen & Dining Room Blower Pump House Marine Pump House IPAL
-            Pond 36 Cultivation Pond
-          </p>
+          <p className="text-lg max-w-3xl mx-auto">Our facilities include:</p>
+          <ul className="text-lg max-w-3xl mx-auto list-disc pl-6 mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+            <li>IPAL Pond</li>
+            <li>36 Cultivation Pond</li>
+            <li>Feed Warehouse & Workshop</li>
+            <li>Laboratory Harvest Hall</li>
+            <li>Blower Pump House</li>
+            <li>Marine Pump House</li>
+            <li>Security Post Office</li>
+            <li>Generator & Mechanic Room</li>
+            <li>Prayer Room (Musholah)</li>
+            <li>Employee Mess Kitchen & Dining Room</li>
+          </ul>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
