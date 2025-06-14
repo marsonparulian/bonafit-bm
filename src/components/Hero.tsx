@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowDown, FishIcon, Shrimp } from "lucide-react";
+import { ArrowDown, FishIcon } from "lucide-react";
 
 export const Hero = () => {
   const scrollToAbout = () => {
@@ -24,14 +23,6 @@ export const Hero = () => {
         />
         <FishIcon
           className="absolute text-white/5 h-32 w-32 bottom-20 left-[20%] transform rotate-[5deg]"
-          strokeWidth={1}
-        />
-        <Shrimp
-          className="absolute text-white/5 h-24 w-24 top-20 right-[25%] transform rotate-[-10deg]"
-          strokeWidth={1}
-        />
-        <Shrimp
-          className="absolute text-white/5 h-80 w-80 bottom-[-8rem] right-[10%] transform rotate-[25deg]"
           strokeWidth={1}
         />
       </div>
