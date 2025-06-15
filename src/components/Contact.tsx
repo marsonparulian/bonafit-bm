@@ -1,4 +1,3 @@
-
 import { Card, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -25,9 +24,7 @@ export const Contact = () => {
                 </div>
                 <CardTitle className="text-xl">Phone</CardTitle>
               </div>
-              <p className="text-muted-foreground">
-                +62 813-5388-1727
-              </p>
+              <p className="text-muted-foreground">+62 813-5388-1727</p>
             </div>
           </Card>
 
@@ -54,10 +51,9 @@ export const Contact = () => {
                 <CardTitle className="text-xl">Address</CardTitle>
               </div>
               <p className="text-muted-foreground">
-                <strong>
-                  KBN (Kampung Bahari Nusantara) PT. Bonafit Bamaraja Marine
-                </strong>
-                ,
+                <strong>KBN (Kampung Bahari Nusantara)</strong>
+                <br />
+                PT. Bonafit Bamaraja Marine,
                 <br />
                 Jalan Pantai Pebuahan, Desa Banyubiru, Kabupaten Jembrana,
                 <br />
