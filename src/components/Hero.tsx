@@ -43,6 +43,7 @@ export const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Bonafit Bamaraja Marine
+            <br />
             <small>Company Profile</small>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
