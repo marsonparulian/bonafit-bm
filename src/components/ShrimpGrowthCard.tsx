@@ -38,7 +38,7 @@ export const ShrimpGrowthCard = ({
 }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <Card className={cn("flex flex-col", className)} {...props}>
-      <CardHeader className="flex flex-row items-center space-x-4">
+      <CardHeader className="flex flex-row items-center justify-center space-x-4">
         <div className="text-6xl">🦐</div>
         <div className="space-y-1.5">
           <CardTitle className="text-3xl">Vaname Crustacea Growth</CardTitle>
