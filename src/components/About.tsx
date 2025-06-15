@@ -40,7 +40,8 @@ export const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            About Bonafit Bamaraja Marine
+            About <br />
+            Bonafit Bamaraja Marine
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Collaborating with the Indonesian Navy (TNI AL) in the government's
