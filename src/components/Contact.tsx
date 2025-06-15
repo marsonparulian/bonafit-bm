@@ -1,3 +1,4 @@
+
 import { Card, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -17,7 +18,7 @@ export const Contact = () => {
 
         <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
           <Card className="hover-scale">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+            <div className="grid grid-cols-[auto_1fr] items-start p-6 gap-x-4">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <Phone className="h-8 w-8 text-primary" />
@@ -29,7 +30,7 @@ export const Contact = () => {
           </Card>
 
           <Card className="hover-scale">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+            <div className="grid grid-cols-[auto_1fr] items-start p-6 gap-x-4">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <Mail className="h-8 w-8 text-primary" />
@@ -43,7 +44,7 @@ export const Contact = () => {
           </Card>
 
           <Card className="hover-scale">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+            <div className="grid grid-cols-[auto_1fr] items-start p-6 gap-x-4">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <MapPin className="h-8 w-8 text-primary" />
