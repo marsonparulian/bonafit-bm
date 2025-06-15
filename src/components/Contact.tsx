@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -15,44 +16,44 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="text-center hover-scale">
-            <CardHeader>
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                <Phone className="h-8 w-8 text-primary" />
+        <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+          <Card className="hover-scale">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-full w-fit">
+                  <Phone className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Phone</CardTitle>
               </div>
-              <CardTitle>Phone</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-2">+62 813-5388-1727</p>
-              {/* <p className="text-muted-foreground">+62 812 3456 7890</p> */}
-            </CardContent>
+              <p className="text-muted-foreground sm:text-right">
+                +62 813-5388-1727
+              </p>
+            </div>
           </Card>
 
-          <Card className="text-center hover-scale">
-            <CardHeader>
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                <Mail className="h-8 w-8 text-primary" />
+          <Card className="hover-scale">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-full w-fit">
+                  <Mail className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Email</CardTitle>
               </div>
-              <CardTitle>Email</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-2">
+              <p className="text-muted-foreground sm:text-right break-words">
                 bonafitbamarajamarine22@gmail.com
               </p>
-              {/* <p className="text-muted-foreground">sales@bonafitbamaraja.com</p> */}
-            </CardContent>
+            </div>
           </Card>
 
-          <Card className="text-center hover-scale">
-            <CardHeader>
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                <MapPin className="h-8 w-8 text-primary" />
+          <Card className="hover-scale">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 gap-4">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-full w-fit">
+                  <MapPin className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Address</CardTitle>
               </div>
-              <CardTitle>Address</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground sm:text-right">
                 <strong>
                   KBN (Kampung Bahari Nusantara) PT. Bonafit Bamaraja Marine
                 </strong>
@@ -62,7 +63,7 @@ export const Contact = () => {
                 <br />
                 Bali, Indonesia
               </p>
-            </CardContent>
+            </div>
           </Card>
         </div>
       </div>
