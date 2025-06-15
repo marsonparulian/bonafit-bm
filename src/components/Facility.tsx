@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -53,6 +54,19 @@ export const Facility = () => {
     },
   ];
 
+  const facilityItems = [
+    "IPAL Pond",
+    "36 Cultivation Pond",
+    "Feed Warehouse & Workshop",
+    "Laboratory Harvest Hall",
+    "Blower Pump House",
+    "Marine Pump House",
+    "Security Post Office",
+    "Generator & Mechanic Room",
+    "Prayer Room (Musholah)",
+    "Employee Mess Kitchen & Dining Room",
+  ];
+
   return (
     <section id="facility" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,17 +80,15 @@ export const Facility = () => {
             marine food production.
           </p>
           <p className="text-lg max-w-3xl mx-auto">Our facilities include:</p>
-          <ul className="text-lg max-w-3xl mx-auto list-disc pl-6 mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
-            <li>IPAL Pond</li>
-            <li>36 Cultivation Pond</li>
-            <li>Feed Warehouse & Workshop</li>
-            <li>Laboratory Harvest Hall</li>
-            <li>Blower Pump House</li>
-            <li>Marine Pump House</li>
-            <li>Security Post Office</li>
-            <li>Generator & Mechanic Room</li>
-            <li>Prayer Room (Musholah)</li>
-            <li>Employee Mess Kitchen & Dining Room</li>
+          <ul className="text-lg max-w-3xl mx-auto mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            {facilityItems.map((item, index) => (
+              <li
+                key={index}
+                className="text-center border border-primary/50 rounded-lg px-4 py-2 text-muted-foreground"
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
 
