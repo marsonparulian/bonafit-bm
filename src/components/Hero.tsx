@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FishIcon, Ship } from "lucide-react";
 
@@ -46,12 +45,12 @@ export const Hero = () => {
             Bonafit Bamaraja Marine
             <br />
             <small className="text-2xl md:text-4xl font-normal">
-              Premium and Sustainable Aquaculture
+              Company Profile
             </small>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Delivering the freshest, high-quality products from our finest
-            ponds.
+            Premium and Sustainable Aquaculture Producer - Delivering the fresh
+            and high quality products from our finest ponds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
