@@ -2,24 +2,12 @@
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "./ui/button";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ShrimpGrowthCard } from "./ShrimpGrowthCard";
 
 export const Production = () => {
-  const shrimpData = [
-    { month: "Jan", production: 400 },
-    { month: "Feb", production: 450 },
-    { month: "Mar", production: 500 },
-    { month: "Apr", production: 480 },
-    { month: "May", production: 520 },
-    { month: "Jun", production: 600 },
-  ];
-
   const fishData = [
     { month: "Jan", production: 300 },
     { month: "Feb", production: 350 },
@@ -44,67 +32,7 @@ export const Production = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Shrimp Production */}
-          <Card className="flex flex-col">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <span className="text-3xl">🦐</span>
-                Vaname Crustacea
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold mb-4">Product Details:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-2">
-                    <li className="flex items-center before:content-['•'] before:mr-2 before:text-primary">
-                      White Leg Shrimp (Litopenaeus vannamei)
-                    </li>
-                    <li className="flex items-center before:content-['•'] before:mr-2 before:text-primary">
-                      Sizes: 16/20, 21/25, 26/30, 31/40
-                    </li>
-                    <li className="flex items-center before:content-['•'] before:mr-2 before:text-primary">
-                      Head-on, Headless, PDTO
-                    </li>
-                    <li className="flex items-center before:content-['•'] before:mr-2 before:text-primary">
-                      Fresh & Frozen options
-                    </li>
-                    <li className="flex items-center before:content-['•'] before:mr-2 before:text-primary">
-                      Monthly capacity: 500+ tons
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-4">
-                    Production Chart (Tons):
-                  </h4>
-                  <div className="space-y-2">
-                    {shrimpData.map((item, index) => (
-                      <div key={index} className="flex items-center gap-2">
-                        <span className="text-xs w-8">{item.month}</span>
-                        <div className="flex-1 bg-muted rounded">
-                          <div
-                            className="bg-blue-500 h-4 rounded"
-                            style={{
-                              width: `${(item.production / 600) * 100}%`,
-                            }}
-                          ></div>
-                        </div>
-                        <span className="text-xs w-8">{item.production}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button asChild className="w-full">
-                <Link to="/shrimp-growth">
-                  View Detailed Growth Chart
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </CardFooter>
-          </Card>
+          <ShrimpGrowthCard />
 
           {/* Fish Production */}
           <Card>
