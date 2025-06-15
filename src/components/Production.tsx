@@ -1,4 +1,14 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export const Production = () => {
   const shrimpData = [
@@ -34,14 +44,14 @@ export const Production = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Shrimp Production */}
-          <Card>
+          <Card className="flex flex-col">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <span className="text-3xl">🦐</span>
                 Vaname Crustacea
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-semibold mb-4">Product Details:</h4>
@@ -86,6 +96,14 @@ export const Production = () => {
                 </div>
               </div>
             </CardContent>
+            <CardFooter>
+              <Button asChild className="w-full">
+                <Link to="/shrimp-growth">
+                  View Detailed Growth Chart
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </CardFooter>
           </Card>
 
           {/* Fish Production */}
