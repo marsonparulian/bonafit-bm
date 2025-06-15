@@ -36,10 +36,12 @@ export const TunaProductionCard = ({
 }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <Card className={cn("flex flex-col", className)} {...props}>
-      <CardHeader className="items-center text-center">
-        <div className="text-6xl mb-4">🐟</div>
-        <CardTitle className="text-3xl">Mackarel Tuna Fish Production</CardTitle>
-        <CardDescription>Quantity (Kg) based on Cycle</CardDescription>
+      <CardHeader className="flex flex-row items-center space-x-4">
+        <div className="text-6xl">🐟</div>
+        <div className="space-y-1.5">
+          <CardTitle className="text-3xl">Mackarel Tuna Fish Production</CardTitle>
+          <CardDescription>Quantity (Kg) based on Cycle</CardDescription>
+        </div>
       </CardHeader>
       <CardContent className="flex-grow">
         <ChartContainer config={chartConfig} className="min-h-[400px] w-full">
