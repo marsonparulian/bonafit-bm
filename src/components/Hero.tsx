@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FishIcon, Ship } from "lucide-react";
 
 export const Hero = () => {
-  const scrollToAbout = () => {
-    const element = document.getElementById("about");
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -55,15 +56,15 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              onClick={scrollToAbout}
+              onClick={() => scrollToSection("about")}
               className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90"
             >
               Learn More
             </Button>
             <Button
-              variant="outline"
               size="lg"
-              className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary"
+              onClick={() => scrollToSection("products")}
+              className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90"
             >
               View Products
             </Button>
