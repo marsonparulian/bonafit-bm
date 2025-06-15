@@ -49,7 +49,7 @@ export const Hero = () => {
               Company Profile
             </small>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mt-4 mb-8 max-w-3xl mx-auto">
             Premium and Sustainable Aquaculture Producer - Delivering the fresh
             and high quality products from our finest ponds.
           </p>
