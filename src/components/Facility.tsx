@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -79,7 +78,7 @@ export const Facility = () => {
             with stringent quality controls to ensure the highest standards in
             marine food production.
           </p>
-          <p className="text-lg max-w-3xl mx-auto">Our facilities include:</p>
+          {/* <p className="text-lg max-w-3xl mx-auto">Our facilities include:</p> */}
           <ul className="text-lg max-w-3xl mx-auto mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
             {facilityItems.map((item, index) => (
               <li
