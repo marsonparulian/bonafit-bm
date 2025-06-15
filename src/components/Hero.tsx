@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowDown, FishIcon, Shrimp } from "lucide-react";
+import { ArrowDown, FishIcon, Ship } from "lucide-react";
 
 export const Hero = () => {
   const scrollToAbout = () => {
@@ -25,15 +26,15 @@ export const Hero = () => {
           className="absolute text-white/5 h-32 w-32 bottom-20 left-[20%] transform rotate-[5deg]"
           strokeWidth={1}
         />
-        <Shrimp
+        <Ship
           className="absolute text-white/5 h-24 w-24 top-20 right-[25%] transform rotate-[-10deg]"
           strokeWidth={1}
         />
-        <Shrimp
+        <Ship
           className="absolute text-white/5 h-80 w-80 bottom-[-8rem] right-[10%] transform rotate-[25deg]"
           strokeWidth={1}
         />
-        <Shrimp
+        <Ship
           className="absolute text-white/5 h-32 w-32 top-1/3 left-[10%] transform rotate-[10deg]"
           strokeWidth={1}
         />
@@ -44,11 +45,13 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Bonafit Bamaraja Marine
             <br />
-            <small>Company Profile</small>
+            <small className="text-2xl md:text-4xl font-normal">
+              Premium and Sustainable Aquaculture
+            </small>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Premium and Sustainable Aquaculture Producer - Delivering the fresh
-            and high quality products from our finest ponds.
+            Delivering the freshest, high-quality products from our finest
+            ponds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
