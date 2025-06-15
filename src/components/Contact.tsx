@@ -18,25 +18,21 @@ export const Contact = () => {
 
         <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
           <Card className="hover-scale">
-            <div className="grid grid-cols-[auto_1fr] items-center p-6 gap-x-4">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-full w-fit">
-                  <Phone className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Phone</CardTitle>
+            <div className="p-6">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mb-4">
+                <Phone className="h-8 w-8 text-primary" />
               </div>
+              <CardTitle className="text-xl mb-2">Phone</CardTitle>
               <p className="text-muted-foreground">+62 813-5388-1727</p>
             </div>
           </Card>
 
           <Card className="hover-scale">
-            <div className="grid grid-cols-[auto_1fr] items-center p-6 gap-x-4">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-full w-fit">
-                  <Mail className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Email</CardTitle>
+            <div className="p-6">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mb-4">
+                <Mail className="h-8 w-8 text-primary" />
               </div>
+              <CardTitle className="text-xl mb-2">Email</CardTitle>
               <p className="text-muted-foreground break-words">
                 bonafitbamarajamarine22@gmail.com
               </p>
@@ -44,13 +40,11 @@ export const Contact = () => {
           </Card>
 
           <Card className="hover-scale">
-            <div className="grid grid-cols-[auto_1fr] items-start p-6 gap-x-4">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-full w-fit">
-                  <MapPin className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Address</CardTitle>
+            <div className="p-6">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mb-4">
+                <MapPin className="h-8 w-8 text-primary" />
               </div>
+              <CardTitle className="text-xl mb-2">Address</CardTitle>
               <p className="text-muted-foreground">
                 <strong>KBN (Kampung Bahari Nusantara)</strong>
                 <br />
