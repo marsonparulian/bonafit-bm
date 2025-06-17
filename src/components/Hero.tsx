@@ -1,50 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FishIcon, Ship } from "lucide-react";
-import { useState, useEffect } from "react";
-import { removeBackground } from "@/utils/backgroundRemoval";
 export const Hero = () => {
-  const [processedImageUrl, setProcessedImageUrl] = useState<string>("");
-  const [isProcessing, setIsProcessing] = useState(false);
-  useEffect(() => {
-    const processImage = async () => {
-      setIsProcessing(true);
-      try {
-        // Load the original image
-        const img = new Image();
-        img.crossOrigin = "anonymous";
-        img.onload = async () => {
-          try {
-            const processedBlob = await removeBackground(img);
-            const url = URL.createObjectURL(processedBlob);
-            setProcessedImageUrl(url);
-          } catch (error) {
-            console.error("Failed to process image:", error);
-            // Fallback to original image
-            setProcessedImageUrl(
-              "/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png"
-            );
-          } finally {
-            setIsProcessing(false);
-          }
-        };
-        img.onerror = () => {
-          console.error("Failed to load image");
-          setProcessedImageUrl(
-            "/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png"
-          );
-          setIsProcessing(false);
-        };
-        img.src = "/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png";
-      } catch (error) {
-        console.error("Error in processImage:", error);
-        setProcessedImageUrl(
-          "/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png"
-        );
-        setIsProcessing(false);
-      }
-    };
-    processImage();
-  }, []);
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({
@@ -94,20 +50,11 @@ export const Hero = () => {
           </h1>
 
           <div className="my-12 flex justify-center">
-            {isProcessing ? (
-              <div className="w-64 h-48 rounded-lg shadow-lg bg-white/10 flex items-center justify-center">
-                <div className="text-white">Processing...</div>
-              </div>
-            ) : (
-              <img
-                alt="Vannamei Shrimp"
-                src={
-                  processedImageUrl ||
-                  "/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png"
-                }
-                className="w-64 h-48 rounded-lg shadow-lg object-fill"
-              />
-            )}
+            <img
+              alt="Vannamei Shrimp"
+              src="/lovable-uploads/13e8fa14-1b7d-41e9-8702-b9692379f537.png"
+              className="w-64 h-48 rounded-lg shadow-lg object-fill"
+            />
           </div>
 
           <p className="text-xl md:text-2xl text-white/90 mt-4 mb-8 max-w-3xl mx-auto">
