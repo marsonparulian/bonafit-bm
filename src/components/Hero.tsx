@@ -28,7 +28,7 @@ export const Hero = () => {
           </h1>
           
           <div className="my-12 flex justify-center">
-            <img alt="Vannamei Shrimp" className="w-64 h-48 object-cover rounded-lg shadow-lg" src="/lovable-uploads/d9fd4ba9-536a-4016-8303-7253dfd0008e.png" />
+            <img alt="Vannamei Shrimp" src="/lovable-uploads/d9fd4ba9-536a-4016-8303-7253dfd0008e.png" className="w-64 h-48  rounded-lg shadow-lg" />
           </div>
           
           <p className="text-xl md:text-2xl text-white/90 mt-4 mb-8 max-w-3xl mx-auto">
