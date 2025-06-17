@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FishIcon, Ship } from "lucide-react";
 export const Hero = () => {
@@ -29,6 +30,9 @@ export const Hero = () => {
           <p className="text-xl md:text-2xl text-white/90 mt-4 mb-8 max-w-3xl mx-auto">
             Premium and Sustainable Aquaculture Producer - Delivering the fresh
             and high quality products from our finest ponds.
+          </p>
+          <p className="text-lg md:text-xl text-white/70 mb-8 font-light italic">
+            Bali, Indonesia
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" onClick={() => scrollToSection("about")} className="text-lg px-8 py-3 bg-white text-primary hover:bg-white/90">
