@@ -60,10 +60,10 @@ export const Facility = () => {
     "Laboratory Harvest Hall",
     "Blower Pump House",
     "Marine Pump House",
-    "Security Post Office",
-    "Generator & Mechanic Room",
-    "Prayer Room (Musholah)",
-    "Employee Mess Kitchen & Dining Room",
+    // "Security Post Office",
+    // "Generator & Mechanic Room",
+    // "Prayer Room (Musholah)",
+    // "Employee Mess Kitchen & Dining Room",
   ];
 
   return (
