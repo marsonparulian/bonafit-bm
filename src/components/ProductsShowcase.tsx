@@ -19,7 +19,7 @@ export const ProductsShowcase = () => {
               <h3 className="text-2xl font-bold mb-4 text-primary">
                 Vaname crustaceans
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-justify mb-6">
                 {/* Fresh, sustainably sourced shrimp available in various sizes.
                 Known for their sweet taste and firm texture, perfect for
                 restaurants and food service operations. */}
@@ -32,7 +32,7 @@ export const ProductsShowcase = () => {
                 in various markets.
               </p>
 
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-justify mb-6">
                 People like Vaname shrimp because of their mild flavor, firm
                 texture, and versatility in many dishes, from grilled skewers to
                 stir-fries. They are also fast-growing and relatively easy to
@@ -51,7 +51,7 @@ export const ProductsShowcase = () => {
               <h3 className="text-2xl font-bold mb-4 text-primary">
                 Mackarel Tuna Fish
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-justify mb-6">
                 {/* A wide variety of fresh fish including tuna, salmon, and local
                 species. All fish are caught using sustainable methods and
                 processed immediately to maintain peak freshness. */}
@@ -62,7 +62,7 @@ export const ProductsShowcase = () => {
                 regions.
               </p>
 
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-justify mb-6">
                 People enjoy mackerel tuna for its rich, flavorful meat that
                 works well in grilling, curries, or canned products. It is a
                 good source of protein and omega-3 fatty acids, making it a
