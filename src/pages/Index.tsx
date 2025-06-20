@@ -28,7 +28,8 @@ const Index = () => {
       <Team />
       <Contact />
       <ThankYou />
-      <Footer />
+      Remove  comment in index.htmlFooter />
+                
     </div>
   );
 };
