@@ -9,11 +9,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger()].filter(
+    Boolean
+  ),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -21,4 +19,4 @@ export default defineConfig(({ mode }) => ({
   },
   // No need to set base path when using a custom domain
   // The CNAME file in your repo will handle the domain configuration
-});
+}));
