@@ -1,29 +1,35 @@
 export const CompanyHistory = () => {
   const milestones = [
     {
-      year: "2010",
+      year: "2021",
       title: "Company Founded",
       description:
-        "Bonafit Bamaraja Marine was established with a vision to become a leading marine food producer.",
+        "Bonafit Bamaraja Marine was established with a vision to become a leading aquaculture food producer.",
     },
     {
-      year: "2015",
-      title: "Facility Expansion",
+      year: "2023",
+      title: "Production Milestone",
       description:
-        "Major expansion of processing facilities and cold storage capabilities.",
+        "Achieved significant production increase in Vannamei Shrimp cultivation.",
     },
-    {
-      year: "2018",
-      title: "International Certification",
-      description:
-        "Achieved HACCP and ISO 22000 certifications for food safety management.",
-    },
-    {
-      year: "2024",
-      title: "Sustainable Leadership",
-      description:
-        "Recognized as a leader in sustainable marine food production practices.",
-    },
+    // {
+    //   year: "2015",
+    //   title: "Facility Expansion",
+    //   description:
+    //     "Major expansion of processing facilities and cold storage capabilities.",
+    // },
+    // {
+    //   year: "2018",
+    //   title: "International Certification",
+    //   description:
+    //     "Achieved HACCP and ISO 22000 certifications for food safety management.",
+    // },
+    // {
+    //   year: "2024",
+    //   title: "Sustainable Leadership",
+    //   description:
+    //     "Recognized as a leader in sustainable marine food production practices.",
+    // },
   ];
 
   return (

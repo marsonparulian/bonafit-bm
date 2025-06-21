@@ -19,20 +19,21 @@ export const About = () => {
       icon: Award,
       title: "Premium Quality",
       description:
-        "Our seafood meets the highest international quality standards with rigorous testing and certification.",
+        // "Our seafood meets the highest international quality standards with rigorous testing and certification.",
+        "Our seafood meets the highest international quality standards.",
     },
     {
       icon: Shield,
       title: "Food Safety",
       description:
-        "Advanced cold-chain management and HACCP compliance ensure maximum freshness and safety.",
+        "Advanced cold-chain management and HACCP (on progress) compliance ensure maximum freshness and safety.",
     },
-    {
-      icon: Truck,
-      title: "Fast Delivery",
-      description:
-        "Direct from boat to your business with our efficient logistics network and temperature-controlled transport.",
-    },
+    // {
+    //   icon: Truck,
+    //   title: "Fast Delivery",
+    //   description:
+    //     "Direct from boat to your business with our efficient logistics network and temperature-controlled transport.",
+    // },
   ];
 
   return (
