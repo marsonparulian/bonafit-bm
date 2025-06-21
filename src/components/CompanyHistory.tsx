@@ -49,16 +49,20 @@ export const CompanyHistory = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {milestones.map((milestone, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
-                {milestone.year}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
+            {milestones.map((milestone, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
+                  {milestone.year}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {milestone.title}
+                </h3>
+                <p className="text-muted-foreground">{milestone.description}</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{milestone.title}</h3>
-              <p className="text-muted-foreground">{milestone.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
