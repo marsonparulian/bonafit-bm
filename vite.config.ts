@@ -19,4 +19,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+  // No need to set base path when using a custom domain
+  // The CNAME file in your repo will handle the domain configuration
+});
